@@ -173,37 +173,31 @@ http://localhost:8080
 
 ## 🏠 Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](snaps/home.png)
 
 ---
 
 ## 👤 Customer Management
 
-![Customer Management](screenshots/customer-management.png)
-
----
-
-## 📱 SIM Validation
-
-![SIM Validation](screenshots/sim-validation.png)
+![Customer Management](snaps/customer.png)
 
 ---
 
 ## 📍 Address Update
 
-![Address Update](screenshots/address-update.png)
+![Address Update](snaps/address.png)
 
 ---
 
 ## 🪪 ID Proof Validation
 
-![ID Proof Validation](screenshots/id-proof-validation.png)
+![ID Proof Validation](snaps/id-proof.png)
 
 ---
 
 ## ✅ SIM Activation
 
-![SIM Activation](screenshots/sim-activation.png)
+![SIM Activation](snaps/activation.png)
 
 ---
 
