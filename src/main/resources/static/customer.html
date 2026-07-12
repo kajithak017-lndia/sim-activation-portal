@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customer Management</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="page-shell">
+
+		<header class="site-header compact">
+
+			<h2>SIM Activation Portal</h2>
+
+			<nav class="site-nav">
+				<a href="index.html">Home</a>
+				<a href="customer.html" class="active">Customer</a>
+				<a href="offers.html">Offers</a>
+				<a href="address.html">Update Address</a>
+				<a href="activation.html">Activation</a>
+			</nav>
+
+		</header>
+
+		<main class="form-layout">
+
+			<section class="form-section">
+
+				<p class="eyebrow">Step 2</p>
+
+				<h2>Customer Management</h2>
+
+				<label for="firstName">First Name</label>
+				<input id="firstName" type="text" placeholder="Enter first name">
+
+				<label for="lastName">Last Name</label>
+				<input id="lastName" type="text" placeholder="Enter last name">
+
+				<label for="email">Email</label>
+				<input id="email" type="email" placeholder="Enter email">
+
+				<label for="dob">Date of Birth</label>
+				<input id="dob" type="date">
+
+				<label for="mobileNumber">Mobile Number</label>
+				<input id="mobileNumber" type="text" placeholder="Enter mobile number">
+
+				<label for="address">Address</label>
+				<input id="address" type="text" placeholder="Enter address">
+
+				<label for="idProof">ID Proof</label>
+				<input id="idProof" type="text" placeholder="Enter ID proof">
+
+				<button type="button" onclick="addCustomer()">
+					Add Customer
+				</button>
+
+				<button type="button" onclick="validateCustomer()">
+					Validate by Email & DOB
+				</button>
+
+				<button type="button" onclick="validateDetails()">
+					Validate Details
+				</button>
+
+				<div id="responseBox" class="success" style="display:none;">
+				</div>
+
+			</section>
+
+		</main>
+
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM Management</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page-shell">
+
+<header class="site-header compact">
+
+<h2>SIM Activation Portal</h2>
+
+<nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="validation.html" class="active">SIM Validation</a>
+    <a href="customer.html">Customer</a>
+    <a href="address.html">Update Address</a>
+    <a href="activation.html">Activation</a>
+</nav>
+
+</header>
+
+<main class="form-layout">
+
+<section class="form-section">
+
+<p class="eyebrow">Step 1</p>
+
+<h2>SIM Management</h2>
+
+<p style="color:#666;margin-bottom:20px;">
+Create a SIM for an existing customer, then validate, activate, deactivate or delete it.
+Customer ID must already exist in the database.
+</p>
+
+<label for="customerId">Customer ID</label>
+<input
+id="customerId"
+type="number"
+placeholder="Enter Existing Customer ID"
+required>
+
+<label for="simNumber">SIM Number</label>
+<input
+id="simNumber"
+type="text"
+placeholder="Example: SIM1004"
+required>
+
+<label for="iccid">ICCID</label>
+<input
+id="iccid"
+type="text"
+placeholder="Enter ICCID"
+required>
+
+<label for="imei">IMEI</label>
+<input
+id="imei"
+type="text"
+placeholder="Enter IMEI"
+required>
+
+<label for="mobileNumber">Mobile Number</label>
+<input
+id="mobileNumber"
+type="text"
+placeholder="Customer Mobile Number">
+
+<label for="networkType">Network Type</label>
+
+<select id="networkType">
+
+<option value="">Select Network</option>
+<option>4G</option>
+<option>5G</option>
+
+</select>
+
+<label for="planName">Plan Name</label>
+
+<select id="planName">
+
+<option value="">Select Plan</option>
+<option>Daily Data 399</option>
+<option>Unlimited 599</option>
+<option>Premium 799</option>
+
+</select>
+
+<button
+type="button"
+onclick="addSim()">
+Add SIM
+</button>
+
+<hr style="margin:30px 0;">
+
+<h3>SIM Operations</h3>
+
+<p style="color:#666;">
+Use the SIM Number below to validate, activate, deactivate or delete the SIM.
+</p>
+
+<button
+type="button"
+onclick="validateSim()">
+Validate SIM
+</button>
+
+<button
+type="button"
+onclick="activateSim()">
+Activate SIM
+</button>
+
+<button
+type="button"
+onclick="deactivateSim()">
+Deactivate SIM
+</button>
+
+<button
+type="button"
+onclick="deleteSim()">
+Delete SIM
+</button>
+
+<div
+id="responseBox"
+class="success"
+style="display:none;">
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
